@@ -1,26 +1,14 @@
 export interface MedicineSchedule {
-  name: string
-  date: Date
+  date: string;
+  notificationId: Date;
 }
 
 export interface Medicine {
+  id: string;
+  notificationId: string;
   name: string;
   type: 'pill' | 'drop' | 'syrup' | 'injection';
-  when: string;
-  medicineDose: string;
-  comment: string;
+  frequency: number;
   schedules: MedicineSchedule[];
-}
-
-export interface task {
-  id: string;
-  selectedDate: Date;
-  stared: boolean;
-  taskDescription: string;
-  taskTitle: string;
-  completed: boolean;
-}
-
-export interface taskList {
-  [key: string]: {ongoingTasks: task[]; completedTasks?: task[]};
+  singleDose: string;
 }

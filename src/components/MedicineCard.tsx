@@ -11,11 +11,11 @@ import {
 import {colors} from '@theme/colors';
 import {hp, wp} from '@utils/responsive-dimension';
 import CustomText from './CustomText';
-import { FontAwesome5, Fontisto, Ionicons } from '@expo/vector-icons';
+import {FontAwesome5, Fontisto, Ionicons} from '@expo/vector-icons';
 
 interface MedicineCardT {
   title?: string;
-  subTitle: string
+  subTitle: string;
   medicineType?: 'pill' | 'drop' | 'syrup' | 'injection';
   onPress?: (event: GestureResponderEvent) => void;
   onPressRightElement?: (event: GestureResponderEvent) => void;
@@ -61,10 +61,26 @@ const MedicineCard: React.FC<MedicineCardT> = ({
 
   return (
     <TouchableOpacity onPress={onPress} style={styles.main}>
-      {medicineType === 'pill' && <Fontisto name={'pills'} size={wp(32)} color={colors.primary} />}
-      {medicineType === 'drop' && <Fontisto name={'blood-drop'} size={wp(32)} color={colors.primary} />}
-      {medicineType === 'injection' && <Fontisto name={'injection-syringe'} size={wp(32)} color={colors.primary} />}
-      {medicineType === 'syrup' && <FontAwesome5 name={'prescription-bottle'} size={wp(32)} color={colors.primary} />}
+      {medicineType === 'pill' && (
+        <Fontisto name={'pills'} size={wp(32)} color={colors.primary} />
+      )}
+      {medicineType === 'drop' && (
+        <Fontisto name={'blood-drop'} size={wp(32)} color={colors.primary} />
+      )}
+      {medicineType === 'injection' && (
+        <Fontisto
+          name={'injection-syringe'}
+          size={wp(32)}
+          color={colors.primary}
+        />
+      )}
+      {medicineType === 'syrup' && (
+        <FontAwesome5
+          name={'prescription-bottle'}
+          size={wp(32)}
+          color={colors.primary}
+        />
+      )}
       <View style={styles.titleContainer}>
         <CustomText.BodyLarge
           textAlign={titleAlign}

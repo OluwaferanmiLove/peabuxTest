@@ -11,8 +11,8 @@ import {
 import {colors} from '@theme/colors';
 import {hp, wp} from '@utils/responsive-dimension';
 import CustomText from './CustomText';
-import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
+import {Ionicons} from '@expo/vector-icons';
+import {useNavigation} from '@react-navigation/native';
 
 interface HeaderT {
   title?: string;
@@ -66,7 +66,11 @@ const Header: React.FC<HeaderT> = ({
   return (
     <View style={styles.main}>
       <TouchableOpacity onPress={() => navigation.goBack()}>
-        <Ionicons name={'ios-chevron-back'} color={colors.primary} size={wp(32)} />
+        <Ionicons
+          name={'ios-chevron-back'}
+          color={colors.primary}
+          size={wp(32)}
+        />
       </TouchableOpacity>
       <View style={styles.titleContainer}>
         {title && (

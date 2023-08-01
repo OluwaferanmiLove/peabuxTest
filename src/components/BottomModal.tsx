@@ -2,7 +2,7 @@ import React, {ReactNode} from 'react';
 import Modal, {ModalProps} from 'react-native-modal';
 import {Platform, StyleSheet, View} from 'react-native';
 import {wp} from '@utils/responsive-dimension';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 export interface BottomModalProps extends Partial<ModalProps> {
   children: ReactNode;
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   modalInner: {
     // flex: 1,
     // marginTop: Platform.select({ios: insert.top}),
-    backgroundColor: '#36373A',
+    backgroundColor: '#ffffff',
     borderTopLeftRadius: wp(8),
     borderTopRightRadius: wp(8),
   },

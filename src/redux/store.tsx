@@ -11,11 +11,11 @@ import {
 } from 'redux-persist';
 import authSlice from './auth/authSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import tasksSlice from './tasks/tasksSlice';
+import medicineSlice from './medicine/medicineSlice';
 
 const reducers = combineReducers({
   auth: authSlice,
-  tasks: tasksSlice,
+  medicineSlice: medicineSlice,
 });
 
 const persistConfig = {
