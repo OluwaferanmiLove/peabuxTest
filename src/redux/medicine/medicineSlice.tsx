@@ -1,6 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit';
 import {revertAll} from '../sharedAction';
-import { Medicine } from './medicine';
+import {Medicine} from './medicine';
 
 interface initialStateType {
   medicine: Medicine[];

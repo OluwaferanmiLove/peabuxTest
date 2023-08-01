@@ -15,8 +15,8 @@ const BaseApp = () => {
           headerShown: false,
           cardStyle: {backgroundColor: colors.mainBg},
         }}>
-        <Stack.Screen name={"Home"} component={Home} />
-        <Stack.Screen name={"AddPills"} component={AddPills} />
+        <Stack.Screen name={'Home'} component={Home} />
+        <Stack.Screen name={'AddPills'} component={AddPills} />
       </Stack.Navigator>
     </NavigationContainer>
   );
