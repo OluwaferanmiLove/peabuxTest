@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -29,6 +31,12 @@
         "projectId": "c0ef90d1-2ecf-4812-acd6-e0c2431e3d71"
       }
     },
-    "owner": "oluwaferanmilove"
+    "owner": "oluwaferanmilove",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c0ef90d1-2ecf-4812-acd6-e0c2431e3d71"
+    }
   }
 }
